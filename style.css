@@ -1,0 +1,48 @@
+body {
+    background-color: #3B4664;
+}
+
+.calc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #252D44;
+    width: 500px;
+    border-radius: 10px;
+}
+
+input[name="display"] {
+    padding: 0 10px;
+    width: 100%;
+    background-color: #727c9c;
+    margin: 10px;
+    height: 40px;
+    text-align: right;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+input[type="button"] {
+    outline: none;
+    width: calc(100% / 4 - 9px);
+    text-align: center;
+    border-radius: 8px;
+    background-color: #EAE3DB;
+    height: 40px;
+    margin: 0 0 5px 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="button"]:nth-last-of-type(1) {
+    background-color: #647299;
+    width: calc(50% - 9px);
+}
+@media screen and (max-width: 600px) {
+    .calc{width: auto;}
+
+}
